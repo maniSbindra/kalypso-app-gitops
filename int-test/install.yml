@@ -5,8 +5,8 @@
   - name: install application
     ansible.builtin.import_tasks: /opt/kalypso/install-deb-package.yml
     vars:
-      package_name: hello-world-0.0.1-19.deb
-      package_storage_url: https://kaizentm.github.io/kalypso-app-src/hello-world-0.0.1-19.deb
+      package_name: hello-world-0.0.1-21.deb
+      package_storage_url: https://kaizentm.github.io/kalypso-app-src/hello-world-0.0.1-21.deb
       app_config_file: app-config.sh    
       command: sample
       args: ""

@@ -29,7 +29,7 @@ jobs:
 
     - name: Notify Orchestrator
       run: |
-          gh workflow run post-deployment.yml -f environment="$GITHUB_REF_NAME" -f promoted_commit_id="$PROMOTED_COMMIT_ID" -f commit_id="$GITHUB_SHA" -f promotion="$PROMOTION" -r main -R "$SRC_REPO"       
+          gh workflow run post-deployment.yml -f environment="$GITHUB_REF_NAME" -f promoted_commit_id="$PROMOTED_COMMIT_ID" -f commit_id="$GITHUB_SHA" -f promotion="$PROMOTION" -f version="$VERSION" -r main -R "$SRC_REPO"       
       env:
         GH_TOKEN: ${{ secrets.CD_BOOTSTRAP_TOKEN }}
         SRC_REPO: ${{ vars.SRC_REPO }}

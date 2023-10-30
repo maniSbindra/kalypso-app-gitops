@@ -9,8 +9,8 @@ spec:
     app: hello-world
   ports:
     - protocol: TCP
-      port: 9090
-      targetPort: 9090
+      port: 9092
+      targetPort: 9092
 ---
 # Source: hello-world/templates/deployment.yaml
 apiVersion: apps/v1
@@ -35,13 +35,13 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: ghcr.io/kaizentm/kalypso-app-src/hello-world:0.0.1-13:0.0.1-13
+        image: ghcr.io/kaizentm/kalypso-app-src/hello-world:0.0.1-23
         imagePullPolicy: Always
         ports:
-        - containerPort: 9090
+        - containerPort: 9092
         env:
         - name: PORT
-          value: "9090"
+          value: "9092"
         - name: CLUSTER_NAME
           valueFrom:
               configMapKeyRef:

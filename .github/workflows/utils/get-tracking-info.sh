@@ -11,8 +11,10 @@
 PROMOTED_COMMIT_ID=$(cat .github/tracking/Promoted_Commit_Id)
 echo "PROMOTED_COMMIT_ID=$PROMOTED_COMMIT_ID" >> $GITHUB_ENV
 
-IMAGE_NAME=$(cat .github/tracking/Image_name)
-echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV  
+IMAGE_TAG=$(cat .github/tracking/Image_tag)
+echo "IMAGE_TAG=$IMAGE_TAG" >> $GITHUB_ENV  
+VERSION=$(cat .github/tracking/Version)
+echo "VERSION=$VERSION" >> $GITHUB_ENV
 
 promoted=$(gh pr list --search $COMMIT_ID --state merged --label promoted)
 if [[ -z "$promoted" ]]; then

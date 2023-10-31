@@ -35,7 +35,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: ghcr.io/kaizentm/kalypso-app-src/hello-world:0.0.1-29
+        image: ghcr.io/kaizentm/kalypso-app-src/hello-world:0.0.1-31
         imagePullPolicy: Always
         ports:
         - containerPort: 9092

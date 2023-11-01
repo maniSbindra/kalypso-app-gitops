@@ -1,0 +1,25 @@
+apiVersion: hub.kalypso.io/v1alpha1
+kind: DeploymentDescriptor
+metadata:
+  name: kalypso-app-src-prod-cloud
+spec:
+  workload:
+    name: hello
+    source:
+        repo: https://github.com/kaizentm/kalypso-app-src
+        branch: main
+        path: .
+    application:
+        name: greeting
+        workspace:
+            name: kaizentm
+  deploymentTarget:
+    name: cloud
+    environment: prod
+    manifests:
+        repo: https://github.com/kaizentm/kalypso-app-gitops
+        branch: prod
+        path: cloud
+  workloadVersion:
+    version: 0.0.1-32
+    commit: 1750b31c477d2ec96f8a67692221e47d14e9740f

@@ -21,5 +21,5 @@ spec:
         branch: prod
         path: cloud
   workloadVersion:
-    version: 0.0.1-32
+    version: 0.0.1-41
     commit: 1750b31c477d2ec96f8a67692221e47d14e9740f

@@ -2,6 +2,7 @@ apiVersion: hub.kalypso.io/v1alpha1
 kind: DeploymentDescriptor
 metadata:
   name: kalypso-app-src-prod-cloud
+  namespace: prod
 spec:
   workload:
     name: hello

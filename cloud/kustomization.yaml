@@ -3,7 +3,6 @@ kind: Kustomization
 resources:
 - gen_manifests.yaml
 
-# add namespace as prod
 namespace: prod
 
 

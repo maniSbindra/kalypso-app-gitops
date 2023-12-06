@@ -22,4 +22,4 @@ spec:
         path: cloud
   workloadVersion:
     version: 0.0.1-41
-    commit: 1750b31c477d2ec96f8a67692221e47d14e9740f
+    commit: 72ad11cdc4ab298370cdcd4e0e3202124b15e533

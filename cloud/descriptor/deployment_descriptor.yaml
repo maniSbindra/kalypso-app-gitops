@@ -2,7 +2,7 @@ apiVersion: hub.kalypso.io/v1alpha1
 kind: DeploymentDescriptor
 metadata:
   labels:
-    kustomize.toolkit.fluxcd.io/name: koh-gitops-config-prod-cloud-kustomization-1
+    kustomize.toolkit.fluxcd.io/name: descriptor-kustomization
     kustomize.toolkit.fluxcd.io/namespace: flux-system
   name: kalypso-app-src-prod-cloud
 spec:
